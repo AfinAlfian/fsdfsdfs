@@ -1,7 +1,7 @@
 #include <iostream>							
 using namespace std;
 
-int a[20];																//Membuat Array dengan panjang data 20
+int arr[20];															//Membuat Array dengan panjang data 20
 int n;																	//Membuat Variabel inputan n
 
 void input() {															//Prosedur untuk input
@@ -19,3 +19,10 @@ void input() {															//Prosedur untuk input
 	cout << "=====================" << endl;							//Membuat tampilan susunan data elemen array
 	cout << "Masukkan Elemen Array" << endl;
 	cout << "=====================" << endl;
+
+	for (int i = 0; i < n; i++) {										//Looping dengan i dimulai dari 0 hingga n-1
+		cout << "Data ke-" << (i + 1) << ": ";							//Output ke layar
+		cin >> arr[i];													//Input dari pengguna
+	}
+}
+
